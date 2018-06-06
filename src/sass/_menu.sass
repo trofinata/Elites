@@ -1,0 +1,102 @@
+.menu	
+	display: flex
+	justify-content: center
+	align-items: center
+	position: fixed
+	top: 0	
+	left: -100vw
+	width: 100vw
+	height: 100vh	
+	background-color: #414141	
+	z-index: 999
+	transition: all 0.5s	
+	&_active
+		left: 0
+	ul
+		padding: 0		
+		list-style-type: none
+		text-align: center
+		li
+			width: 100vw
+			height: 50px			
+		a
+			display: block
+			width: 100%
+			color: #fff
+			text-decoration: none
+			line-height: 4
+			font-weight: 100
+			letter-spacing: 4px
+			transition: all 0.2s			
+	&-link		
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		left: 5%
+		display: none
+		width: 40px
+		height: 40px				
+		border-radius: 50%		
+		z-index: 1000	
+		background-color: #fff			
+		span			
+			position: absolute
+			top: 49%
+			left: 50%
+			margin-top: -1px
+			margin-left: -9px
+			display: block
+			height: 2px
+			width: 18px
+			background-color: #333			
+			&:before
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				margin-top: -8px
+				margin-left: -9px
+				display: block
+				height: 2px
+				width: 18px
+				background-color: #333
+				transition: all 0.2s				
+			&:after
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				margin-top: 5px
+				margin-left: -9px
+				display: block
+				height: 2px
+				width: 18px	
+				background-color: #333			
+				transition: all 0.2s				
+		&_active span
+			background-color: transparent
+			&:before
+				margin-top: 0
+				transform: rotate(135deg)
+			&:after
+				margin-top: 0
+				transform: rotate(-135deg)
+	.header
+		&-item
+			&__link						
+				&_company
+					position: relative	
+					font-size: 12px
+					text-transform: uppercase					
+					&:hover
+						margin-bottom: 130px
+						& .header-list__drop
+							display: block
+			&__drop
+				display: flex
+				justify-content: center
+				
+
+		
+			
+
