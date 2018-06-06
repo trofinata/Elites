@@ -1,0 +1,98 @@
+.header
+	margin-top: 23px
+	margin-bottom: 14px
+	font-family: 'Proxima Nova Bold', sans-serif
+	&-nav
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding:			
+			right: 10px
+		background: #414141
+		border-radius: 5px
+	&-list
+		display: flex
+		justify-content: space-between
+		align-items: center			
+		&__drop
+			position: absolute
+			display: none		
+	&-line
+		width: 1px
+		height: 24px
+		padding: 0
+		background: #5c5c5c		
+	&-item						
+		padding:
+			top: 13px
+			bottom: 13px																		
+		&__link
+			position: relative
+			display: inline-block
+			width: 100%
+			padding:
+				left: 10px
+				right: 10px
+			font-size: 12px
+			letter-spacing: 0.5px
+			color: #fff
+			text-transform: uppercase
+			text-decoration: none
+			&:after
+				content: ''
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				right: 0
+				width: 1px
+				height: 24px
+				background: #5c5c5c
+			&:before
+				content: ''
+				position: absolute
+				display: none
+				top: 50%
+				transform: translateY(-50%)
+				left: -1px
+				width: 1px
+				height: 24px
+				background: #414141			
+		&:last-child .header-item__link
+			&:after
+				display: none			
+		&:first-child			
+			&:hover .header-item__link:before
+				display: none		
+		&:hover			
+			background: #3a3838			
+			&:first-child
+				border-radius: 5px 0 0 5px
+			& .header-item__link:after
+				display: none
+			& .header-item__link:before
+				display: block				
+		&:nth-child(2):hover .header-list__drop
+			display: block	
+	&-search__input
+		width: 157px
+		height: 26px
+		padding:
+			left: 10px
+			top: 7px
+			bottom: 7px
+		font-family: 'Proxima Nova Reg', sans-serif
+		font-size: 12px
+		background: #fff url(../img/header/search.png) right no-repeat
+		border: none
+		border-radius: 5px
+		outline: none
+
+
+
+			
+
+			
+
+			
+
+
