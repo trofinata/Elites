@@ -1,4 +1,18 @@
+@media(max-width: 1200px)
+	.main
+		&-photo
+			justify-content: space-between
+			&__item
+				width: 30%
+				&_add
+					display: none
+		&-img__add
+			display: none
+		&-data__line
+			width: 100%
 @media(max-width: 992px)
+	.container
+		width: 92%
 	.header
 		&-list
 			width: 65%
@@ -15,7 +29,28 @@
 			width: auto
 		&-search
 			width: 157px
-@media(max-width: 598px)
+	.main
+		&-photo
+			margin-bottom: 13px
+			&__item
+				width: 32%
+				max-height: 103px	
+		&-img
+			height: 100%
+		&-title
+			margin-bottom: 16px
+		&-data
+			margin-bottom: 0
+			&__line
+				padding:
+					top: 10px
+					bottom: 11px
+			&__wrap
+				width: 50%
+		&-description
+			width: 90%
+			font-size: 14px
+@media(max-width: 597px)
 	.header
 		&-link
 			width: 90%	
@@ -37,6 +72,27 @@
 	.menu
 		&-link		
 			display: block
+	.main
+		&-photo__item								
+			&:hover.main-photo__item:after
+					display: block			
+		&-title
+			font-size: 22px
+		&-data__wrap
+			width: 100%
+		&-description
+			width: 100%
+@media(max-width: 450px)
+	.main
+		&-photo__item
+			display: none
+			&:nth-child(2),
+			&:nth-child(4)
+				display: block
+				width: 48%
+
+
+
 
 	
 
