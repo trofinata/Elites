@@ -4,10 +4,7 @@
 			&__item
 				&:first-child
 					display: none
-@media(max-width: 1200px)
-	.header
-		&-list
-			width: 70%
+@media(max-width: 1200px)	
 	.main
 		&-photo
 			justify-content: space-between
@@ -44,16 +41,25 @@
 @media(max-width: 768px)
 	.header
 		&-list
-			width: auto	
+			width: 75%											
 			&__drop
 				.header-item__link
-					font-size: 13px		
-		&-item
-			width: auto
+					font-size: 13px	
+		&-item	
+			width: 27%		
 			&__link
-				font-size: 12px
+				padding:
+					left: 0px
+					right: 0px
+				font-size: 12px	
+			&:first-child,
+			&:last-child
+				width: 23%
+				padding: 
+					left: 0
+					right: 0								
 		&-search
-			width: 157px
+			width: 32%			
 			&__input
 				font-size: 12px
 	.main
@@ -101,9 +107,7 @@
 			&__content
 				min-height: 140px		
 @media(max-width: 597px)
-	.header
-		&-link
-			width: 90%	
+	.header			
 		&-search
 				width: 25%				
 @media(max-width: 576px)

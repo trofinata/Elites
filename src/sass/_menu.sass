@@ -12,8 +12,12 @@
 	transition: all 0.5s	
 	&_active
 		left: 0
-	ul
-		padding: 0		
+	&-list
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		height: 100vw
+		padding: 0				
 		list-style-type: none
 		text-align: center
 		li
@@ -81,20 +85,18 @@
 			&:after
 				margin-top: 0
 				transform: rotate(-135deg)
-	.header
-		&-item
-			&__link						
-				&_company
-					position: relative	
-					font-size: 12px
-					text-transform: uppercase					
-					&:hover
-						margin-bottom: 130px
-						& .header-list__drop
-							display: block
-			&__drop
-				display: flex
-				justify-content: center
+	.header-item__company	
+		position: relative		
+		font-size: 12px
+		text-transform: uppercase
+		&:hover	
+			margin-bottom: 110px						
+			& .header-list__drop							
+				display: block
+
+
+
+
 				
 
 		

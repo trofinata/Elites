@@ -22,14 +22,16 @@
 		&__item
 			display: flex
 			justify-content: center
+			align-items: center
 			width: 49%			
 			margin-bottom: 20px	
 	&-text_bold
 		font-family: 'Proxima Nova Bold', sans-serif
 	&-tabs
+		position: relative
 		display: flex
 		justify-content: space-between
-		margin-bottom: 16px	
+		margin-bottom: 16px							
 	&-tab
 		position: relative
 		width: 24%
@@ -40,16 +42,18 @@
 		font-size: 18px
 		background: #29b77b
 		color: #fff 
-		border-radius: 5px 5px 0 0	
-		cursor: pointer
+		border-radius: 5px 5px 0 0
+		border: 2px solid #29b77b
+		border-bottom: none	
+		cursor: pointer		
 		&:after
 			content: ''
 			position: absolute
 			bottom: 0
-			right: -100%
-			width: 100%
+			right: -10%
+			width: 10%
 			height: 2px
-			background: #29b77b
+			background: #29b77b					
 		&:last-child
 			&:after
 				display: none
@@ -71,12 +75,16 @@
 			min-height: 120px
 			padding-left: 12px
 			line-height: 21px			
-	.active
+	.active	
+		position: relative	
 		font-family: 'Proxima Nova Bold', sans-serif
 		background: #fff		
 		color: #29b77b
-		border: 2px solid #29b77b
-		border-bottom: none  
+		border-bottom: none	
+		z-index: 9999
+		
+		
+		
 	
 
 
