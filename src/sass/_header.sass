@@ -4,18 +4,17 @@
 	font-family: 'Proxima Nova Bold', sans-serif
 	&-nav
 		position: relative
-		display: flex
-		justify-content: space-between
+		display: flex		
 		align-items: center
 		padding:			
-			right: 10px
+			right: 10px		
 		background: #414141
 		border-radius: 5px
 	&-list		
 		display: flex
 		justify-content: space-between
 		align-items: center	
-		width: 60%		
+		width: 80%		
 		&__drop
 			position: absolute
 			left: 0
@@ -29,7 +28,7 @@
 			.header-item__link
 				padding:					
 					bottom: 7px
-				font-size: 13px
+				font-size: 16px
 				text-transform: none					
 	&-line
 		width: 1px
@@ -47,17 +46,19 @@
 				width: 90%
 				padding:
 					left: 0
-					right: 0
+					right: 0										
 				&:after
 					display: none
 				&:before
-					display: none
-				&:first-child
-					border-bottom: 1px solid #5c5c5c	
+					display: none								
+				&:last-child
+					padding-top: 5px
+			&:first-child
+				border-bottom: 1px solid #5c5c5c
 			&:hover
 				.header-item__link
 					&:after
-						display: none																															
+						display: none																																		
 		&__link
 			position: relative
 			display: inline-block
@@ -65,7 +66,7 @@
 			padding:
 				left: 10px
 				right: 10px
-			font-size: 12px
+			font-size: 14px
 			letter-spacing: 0.5px
 			color: #fff
 			text-transform: uppercase
@@ -88,13 +89,35 @@
 				left: -1px
 				width: 1px
 				height: 24px
-				background: #414141			
+				background: #414141	
+			/* FOR IE - не видит псевдоклассы у 3-го и 4-го элементов, поэтому пришлось задать дополнительно*/
+			&_company
+				&:after	
+					content: ''
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+					right: 0.2px
+					width: 1px
+					height: 24px
+					background: #5c5c5c	
+			&_price
+				&:before
+					content: ''
+					position: absolute
+					display: none
+					top: 50%
+					transform: translateY(-50%)
+					left: -1.2px
+					width: 1px
+					height: 24px
+					background: #414141
 		&:last-child .header-item__link
 			&:after
 				display: none			
 		&:first-child			
 			&:hover .header-item__link:before
-				display: none		
+				display: none
 		&:hover			
 			background: #3a3838			
 			&:first-child
@@ -118,11 +141,9 @@
 			width: 100%	
 			height: 26px
 			padding:
-				left: 10px
-				top: 7px
-				bottom: 7px
+				left: 10px				
 			font-family: 'Proxima Nova Reg', sans-serif
-			font-size: 12px
+			font-size: 14px
 			background: #fff url(../img/header/search.png) right no-repeat
 			border: none
 			border-radius: 5px

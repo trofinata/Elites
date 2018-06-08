@@ -1,11 +1,19 @@
+@media(max-width: 1300px)
+	.main
+		&-photo
+			&__item
+				&:first-child
+					display: none
 @media(max-width: 1200px)
+	.header
+		&-list
+			width: 70%
 	.main
 		&-photo
 			justify-content: space-between
-			&__item
-				width: 30%
-				&_add
-					display: none
+			&__item				
+				&:last-child
+					display: none				
 		&-img__add
 			display: none
 		&-data__line
@@ -13,43 +21,85 @@
 @media(max-width: 992px)
 	.container
 		width: 92%
-	.header
-		&-list
-			width: 65%
+	.header		
 		&-item
 			width: 25%
 			text-align: center	
 		&-search
 			width: 25%
+@media(max-width: 850px)
+	.contacts-img
+		&__wrapper
+			flex-direction: column
+		&__item
+			width: 100%
+			&:nth-child(2n)
+				display: none
+@media(max-width: 840px)
+	.main
+		&-photo
+			&__item
+				&:nth-child(6)
+					display: none		
 @media(max-width: 768px)
 	.header
 		&-list
-			width: auto
+			width: auto	
+			&__drop
+				.header-item__link
+					font-size: 13px		
 		&-item
 			width: auto
+			&__link
+				font-size: 12px
 		&-search
 			width: 157px
+			&__input
+				font-size: 12px
 	.main
 		&-photo
-			margin-bottom: 13px
+			margin-bottom: 11px
 			&__item
-				width: 32%
-				max-height: 103px	
+				width: 32%				
+				&:nth-child(3),
+				&:nth-child(5)
+					display: none
+				&:nth-child(6)
+					display: block	
 		&-img
 			height: 100%
 		&-title
 			margin-bottom: 16px
+			font-size: 23px
 		&-data
 			margin-bottom: 0
+			&__text
+				font-size: 13px
 			&__line
 				padding:
 					top: 10px
 					bottom: 11px
 			&__wrap
-				width: 50%
+				width: 51%
+		&_bold
+			font-size: 13px
+			&_date
+				font-size: 16px
 		&-description
 			width: 90%
 			font-size: 14px
+	.contacts
+		font-size: 14px
+		line-height: 22px
+		&-tab
+			font-size: 14px
+			&__text
+				&_bold
+					font-size: 18px	
+				&_green
+					font-size: 16px
+			&__content
+				min-height: 140px		
 @media(max-width: 597px)
 	.header
 		&-link
@@ -71,25 +121,61 @@
 			width: 50%							
 	.menu
 		&-link		
-			display: block
-	.main
-		&-photo__item								
-			&:hover.main-photo__item:after
-					display: block			
+			display: block							
 		&-title
 			font-size: 22px
 		&-data__wrap
 			width: 100%
 		&-description
 			width: 100%
+	.main
+		&-photo			
+			&__item
+				width: auto
+				&:nth-child(4)
+					display: none
+				&:nth-child(3)
+					display: block
+		&-title
+			font-size: 22px
+		&-data__wrap
+			width: 100%	
+	.contacts
+		&-tab
+			&__content
+				min-height: 203px			
+@media(max-width: 530px)
+	.main
+		&-photo			
+			&__item
+				&:nth-child(3),
+				&:nth-child(2)
+					display: none
+				&:first-child,
+				&:last-child
+					display: block
 @media(max-width: 450px)
 	.main
-		&-photo__item
-			display: none
-			&:nth-child(2),
-			&:nth-child(4)
-				display: block
-				width: 48%
+		&-photo			
+			&__item
+				&:nth-child(6)
+					display: none
+				&:nth-child(3)
+					display: block
+@media(max-width: 380px)
+	.main
+		&-photo			
+			&__item	
+				width: 49%			
+				&:nth-child(odd)
+					display: none
+				&:nth-child(2),
+				&:nth-child(4)
+					display: block
+
+
+
+
 
 
 

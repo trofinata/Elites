@@ -1,7 +1,10 @@
 .main
+	position: relative
+	margin-bottom: 40px	
 	padding-top: 15px
 	background: #fff
-	border-radius: 5px
+	border-radius: 10px
+	box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.12)
 	&-container
 		width: 90%
 		margin: 0 auto
@@ -10,7 +13,7 @@
 		justify-content: space-between		
 		margin-bottom: 19px
 		&__item
-			position: relative
+			position: relative			
 			&:after
 				content: ''
 				position: absolute
@@ -21,17 +24,26 @@
 				height: 100%
 				background: #29b77b
 				opacity: 0.15
-				border-radius: 5px
+				border-radius: 10px
 				z-index: 2	
 			&:hover.main-photo__item:after
-				display: none								
+				display: none	
+	&:after
+		position: absolute
+		content: ''
+		width: 100%
+		height: 1px
+		margin-top: 20px
+		margin-bottom: 20px
+		background: url(../img/line.png) 		
 	&-img	
 		width: 100%
 		height: 100%	
-		border-radius: 5px
+		border-radius: 10px
 	&-title
+		margin-bottom: 20px
 		font-family: 'Proxima Nova Bold', sans-serif
-		font-size: 23px
+		font-size: 30px
 		text-align: center
 		color: #29b77b
 	&-data
@@ -39,7 +51,7 @@
 		&__line
 			display: flex
 			justify-content: space-between
-			width: 50%		
+			width: 100%		
 			margin: 0 auto			
 			padding:
 				top: 13px
@@ -48,18 +60,21 @@
 			&:nth-child(odd)
 				background: #f5f5f5
 		&__text
-			width: 60%			
+			width: 60%						
 			text-align: left
 			color: #727272
 		&__wrap
 			display: flex
 			justify-content: space-between			
 			width: 70%	
-			font-size: 13px		
-	&_bold
+			font-size: 17px		
+	&_bold		
 		font-family: 'Proxima Nova Bold', sans-serif
+		&_date
+			font-size: 20px
 	&-description
 		padding-bottom: 15px
+		font-size: 18px
 		color: #171717
 		&__link
 			position: relative

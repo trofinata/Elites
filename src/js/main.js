@@ -14,4 +14,9 @@ $(document).ready(function(){
 	});
 });
 
+$(".contacts-tab_item").not(":first").hide();
+$(".contacts-tab__wrapper .contacts-tab").click(function() {
+	$(".contacts-tab__wrapper .contacts-tab").removeClass("active").eq($(this).index()).addClass("active");
+	$(".contacts-tab__item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
 

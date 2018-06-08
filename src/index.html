@@ -40,7 +40,7 @@
 		 			</li>
 		 			<!-- /.header-item -->		 			
 		 			<li class="header-item">
-		 				<a href="#" class="header-item__link">О компании</a>
+		 				<a href="#" class="header-item__link header-item__link_company">О компании</a><!-- Из-за бага в IE класс задала дополнительно, чтобы задать псевдоэлемент, т.к. в IE не отображались у этих элементов -->
 		 				<ul class="header-list__drop">
 							<li class="header-item__drop">
 								<a href="#" class="header-item__link">Меню 1</a>
@@ -54,7 +54,7 @@
 		 			</li>
 		 			<!-- /.header-item -->		 			
 		 			<li class="header-item">
-		 				<a href="#" class="header-item__link">Прайс-лист</a>
+		 				<a href="#" class="header-item__link header-item__link_price">Прайс-лист</a><!-- Из-за бага в IE класс задала дополнительно, чтобы задать псевдоэлемент, т.к. в IE не отображались у этих элементов -->
 		 			</li>
 		 			<!-- /.header-item -->		 			
 		 			<li class="header-item">
@@ -120,12 +120,70 @@
 			 		<!-- /.main-description__text -->
 			 		<p class="main-description__text">Срок действия скидки: <span class="main_bold">7 дней</span></p>
 			 		<!-- /.main-description__text -->
-			 		<p class="main-description__text">Дата активации скидки: <span class="main_bold">10.06.2018 - 17.06.2018</span></p>
+			 		<p class="main-description__text">Дата активации скидки: <span class="main_bold main_bold_date">10.06.2018 - 17.06.2018</span></p>
 			 		<!-- /.main-description__text -->
 			 	</div>
 			 	<!-- /.main-description -->
 		 	</div>
-		 </section>		 
+		 </section>	
+		 <section class="contacts">
+	 	 	<div class="contacts-container">
+	 	 		<h2 class="visually-hidden">Контакты</h2>
+	 	 		<!-- /.visually-hidden -->
+	 			<p class="contacts-text">Кроме этого, Вы можете получить скидку в наших магазинах.</p>
+	 			<!-- /.contacts-text -->
+	 			<p class="contacts-text contacts-text_bold">Магазин на Киевском шоссе</p>
+	 			<!-- /.contacts-text -->
+	 			<p class="contacts-text">Телефон: +7 (985) <span class="contacts-text_bold">774-54-17,</span> +7 (495) <span class="contacts-text_bold">228-09-51</span></p>
+	 			<!-- /.contacts-text -->
+	 			<div class="contacts-img__wrapper">
+		 			<div class="contacts-img__item">
+		 				<img src="img/contacts/img1.jpg" alt="Карта" class="contacts-img contacts-img_first">
+		 			</div>
+		 			<div class="contacts-img__item">
+		 				<img src="img/contacts/img2.png" alt="Карта" class="contacts-img contacts-img_second">
+		 			</div>
+		 			<div class="contacts-img__item">
+		 				<img src="img/contacts/img3.png" alt="Карта" class="contacts-img contacts-img_third">
+		 			</div>
+		 			<div class="contacts-img__item">
+		 				<img src="img/contacts/img4.png" alt="Карта" class="contacts-img contacts-img_fourth">
+		 			</div>
+	 			</div>
+	 			<div class="contacts-tab__wrapper">
+					<div class="contacts-tabs">
+						<span class="contacts-tab">Таб 1</span>
+						<span class="contacts-tab">Таб 2</span>
+						<span class="contacts-tab">Таб 3</span> 
+						<span class="contacts-tab">Таб 4</span>       
+					</div>
+					<div class="contacts-tab__content">
+						<div class="contacts-tab__item">
+							<p class="contacts-tab__text contacts-tab__text_bold">На автомобиле</p>
+							<p class="contacts-tab__text contacts-tab__text_green">Из Москвы</p>
+							<p class="contacts-tab__text">Вы выезжаете через Ленинский проспект на Киевское шоссе и уже через 500 м МКАД по правой стороне видите ТЦ &#171;Румянцево&#187;. Съезд на парковку - сразу после поворота на АЗС &#171;Татнефть&#187;.</p>
+						</div>
+						<div class="contacts-tab__item">
+							<p class="contacts-tab__text contacts-tab__text_bold">На метро</p>
+							<p class="contacts-tab__text contacts-tab__text_green">По Москве</p>
+							<p class="contacts-tab__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas assumenda dicta vel suscipit ea minus nobis a enim reprehenderit officia corporis eveniet, necessitatibus quae, aspernatur numquam odit aliquid. Incidunt, voluptate.</p>
+						</div>
+						<div class="contacts-tab__item">
+							<p class="contacts-tab__text contacts-tab__text_bold">На общественном транспорте</p>
+							<p class="contacts-tab__text contacts-tab__text_green">По Москве</p>
+							<p class="contacts-tab__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed suscipit minima expedita autem sapiente eaque enim ratione, rerum, veniam unde maxime aliquam explicabo ullam, quibusdam labore quod. Labore, sequi aperiam?</p>
+						</div>
+						<div class="contacts-tab__item">
+							<p class="contacts-tab__text contacts-tab__text_bold">Пешком</p>
+							<p class="contacts-tab__text contacts-tab__text_green">От станции метро Калужская</p>
+							<p class="contacts-tab__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique perferendis, earum facilis repellat error tenetur, culpa labore, aspernatur molestias praesentium suscipit, iure tempore dolores. Earum saepe quas sequi dicta non?</p>
+						</div>
+					</div>
+				</div>
+ 	 		</div> 	 	
+	 	 	<!-- /.contacts-container -->
+	 	 </section>
+	 	 <!-- /.contacts -->	 
 	</div>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/main.js"></script>
